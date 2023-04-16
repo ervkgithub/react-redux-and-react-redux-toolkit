@@ -32,6 +32,7 @@
 
 ### useDispatch -
 
+### Firebase db url https://react-redux-ecommerce-131bc-default-rtdb.firebaseio.com/
 
 
 
