@@ -22,17 +22,53 @@
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Install redux and react-redux `npm i redux react-redux` 
+### Install redux and react-redux `npm i redux react-redux`
 
-### createStore - 
+### createStore -
 
-### Provider - 
+### createSlice -
+
+### Provider -
 
 ### useSelector -
 
 ### useDispatch -
 
+### `npm install @mui/material @emotion/react @emotion/styled`
 
+### "thunks" are a pattern of writing functions with logic inside that can interact with a Redux store's dispatch and getState methods.
 
+## Counter App Demo 1
 
+### `create store and call it on App.js component wrapped with Provider and with attribute store in import store from from store like below`
 
+### `import store from './store'; import { Provider } from 'react-redux';`
+
+### `<Provider store={store}> <React.StrictMode> <App /> </React.StrictMode> </Provider>`
+
+### `
+<code>
+    function App() {
+  const counter = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
+  const incr = () => {
+    dispatch({ type: "INCR" });
+  };
+  const decr = () => {
+    dispatch({ type: "DECR" });
+  };
+  const add = () => {
+    dispatch({ type: "ADD", payload: 10 });
+  };
+</code>`
+
+<code> 
+      <p>Counter: {counter}</p>
+      <button onClick={incr}>Increment</button>
+      <button onClick={decr}>Decrement</button>
+      <button onClick={add}>Add By 10</button>
+</code> 
+
+## Counter App Demo 2 with Redux Toolkit
+
+### `npm install @reduxjs/toolkit`

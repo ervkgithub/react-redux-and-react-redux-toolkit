@@ -26,13 +26,17 @@
 
 ### createStore - 
 
+### createSlice -
+
 ### Provider - 
 
 ### useSelector -
 
 ### useDispatch -
 
+### `npm install @mui/material @emotion/react @emotion/styled`
 
+### "thunks" are a pattern of writing functions with logic inside that can interact with a Redux store's dispatch and getState methods.
 
 
 
